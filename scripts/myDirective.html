@@ -1,0 +1,29 @@
+<div class="container directive-wrapper">
+	<div class="my-dir-left-col">
+		<img src="assets/images/placeholder.jpg" alt="..." class="img-rounded">
+	</div>
+	<div class="my-dir-right-col">
+		<div class="name">
+			{{ revPerf.owner.name }}
+		</div>
+		<div class="prog-bar-wrap">
+			<div class="span-wrap"> 
+				<span class="actual">
+					{{ "$" + revPerf.revenue_actual }}
+				</span>
+				<span class="limit">
+					{{ "$" + (revPerf.revenue_target + 10000) }}
+				</span>
+			</div>
+			<div class="prog-bar">
+				<div class="actual-prog">
+				</div>
+				<div class="goal">
+					<span class="target">
+						{{ "$" + revPerf.revenue_target }}
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
